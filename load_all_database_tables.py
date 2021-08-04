@@ -18,7 +18,7 @@ def load_products_table():
 
 
     # insert all rows into the products table
-    products = pd.read_excel('supermarket_products.xlsx')
+    products = pd.read_excel('datasets/supermarket_products.xlsx')
     dbu.insert_data(database='supermarket.db', 
                 table='products', 
                 data=products)
@@ -33,7 +33,7 @@ def load_prices_table():
     # insert all rows into the prices table
     for i in range(1,6):
         location = f'location_{i}'
-        prices = pd.read_csv(f'{location}_prices.csv', index_col=0).reset_index()
+        prices = pd.read_csv(f'datasets/{location}_prices.csv', index_col=0).reset_index()
         labels = pd.Series([location for i in prices.index], name='location', index=prices.index)
         prices = prices.join(labels)
         prices = prices.rename(columns={'index':'product'})
@@ -52,7 +52,7 @@ def load_transactions_table():
     # insert all rows into the transactions table
     for i in range(1,6):
         location = f'location_{i}'
-        transactions = pd.read_csv(f'march_2021_transactions_{location}.csv', index_col=0)
+        transactions = pd.read_csv(f'datasets/march_2021_transactions_{location}.csv', index_col=0)
         labels = pd.Series([location for i in transactions.index], name='location', index=transactions.index)
         transactions = transactions.join(labels)
         transactions = transactions.rename(columns={'item':'product'})
