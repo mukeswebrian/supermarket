@@ -1,1 +1,124 @@
-{"product_list": [{"Product": "coffee", "Category": "beverages", "Unit Cost of Goods": 200.0}, {"Product": "tea", "Category": "beverages", "Unit Cost of Goods": 300.0}, {"Product": "soda", "Category": "beverages", "Unit Cost of Goods": 1000.0}, {"Product": "loaves", "Category": "bakery", "Unit Cost of Goods": 2000.0}, {"Product": "buns", "Category": "bakery", "Unit Cost of Goods": 1500.0}, {"Product": "cupcakes", "Category": "bakery", "Unit Cost of Goods": 500.0}, {"Product": "cookies", "Category": "bakery", "Unit Cost of Goods": 500.0}, {"Product": "beans", "Category": "canned food", "Unit Cost of Goods": 800.0}, {"Product": "ketchup", "Category": "canned food", "Unit Cost of Goods": 1500.0}, {"Product": "beef", "Category": "meat", "Unit Cost of Goods": 5000.0}, {"Product": "chicken", "Category": "meat", "Unit Cost of Goods": 5500.0}, {"Product": "pork", "Category": "meat", "Unit Cost of Goods": 4000.0}, {"Product": "tilapia", "Category": "meat", "Unit Cost of Goods": 3500.0}, {"Product": "bananas", "Category": "fruits", "Unit Cost of Goods": 1500.0}, {"Product": "oranges", "Category": "fruits", "Unit Cost of Goods": 800.0}, {"Product": "apples", "Category": "fruits", "Unit Cost of Goods": 900.0}, {"Product": "laundry detergent", "Category": "detergents", "Unit Cost of Goods": 3000.0}, {"Product": "dish soap", "Category": "detergents", "Unit Cost of Goods": 2300.0}, {"Product": "all purpose", "Category": "detergents", "Unit Cost of Goods": 2700.0}, {"Product": "toilet paper", "Category": "toileteries", "Unit Cost of Goods": 1700.0}, {"Product": "paper towels", "Category": "toileteries", "Unit Cost of Goods": 1500.0}, {"Product": "shampoo", "Category": "personal care", "Unit Cost of Goods": 3000.0}, {"Product": "hand soap", "Category": "personal care", "Unit Cost of Goods": 2300.0}, {"Product": "shaving cream", "Category": "personal care", "Unit Cost of Goods": 2400.0}]}
+{
+   "product_list":[
+      {
+         "Product":"coffee",
+         "Category":"beverages",
+         "Unit Cost of Goods":200.0
+      },
+      {
+         "Product":"tea",
+         "Category":"beverages",
+         "Unit Cost of Goods":300.0
+      },
+      {
+         "Product":"soda",
+         "Category":"beverages",
+         "Unit Cost of Goods":1000.0
+      },
+      {
+         "Product":"loaves",
+         "Category":"bakery",
+         "Unit Cost of Goods":2000.0
+      },
+      {
+         "Product":"buns",
+         "Category":"bakery",
+         "Unit Cost of Goods":1500.0
+      },
+      {
+         "Product":"cupcakes",
+         "Category":"bakery",
+         "Unit Cost of Goods":500.0
+      },
+      {
+         "Product":"cookies",
+         "Category":"bakery",
+         "Unit Cost of Goods":500.0
+      },
+      {
+         "Product":"beans",
+         "Category":"canned food",
+         "Unit Cost of Goods":800.0
+      },
+      {
+         "Product":"ketchup",
+         "Category":"canned food",
+         "Unit Cost of Goods":1500.0
+      },
+      {
+         "Product":"beef",
+         "Category":"meat",
+         "Unit Cost of Goods":5000.0
+      },
+      {
+         "Product":"chicken",
+         "Category":"meat",
+         "Unit Cost of Goods":5500.0
+      },
+      {
+         "Product":"pork",
+         "Category":"meat",
+         "Unit Cost of Goods":4000.0
+      },
+      {
+         "Product":"tilapia",
+         "Category":"meat",
+         "Unit Cost of Goods":3500.0
+      },
+      {
+         "Product":"bananas",
+         "Category":"fruits",
+         "Unit Cost of Goods":1500.0
+      },
+      {
+         "Product":"oranges",
+         "Category":"fruits",
+         "Unit Cost of Goods":800.0
+      },
+      {
+         "Product":"apples",
+         "Category":"fruits",
+         "Unit Cost of Goods":900.0
+      },
+      {
+         "Product":"laundry detergent",
+         "Category":"detergents",
+         "Unit Cost of Goods":3000.0
+      },
+      {
+         "Product":"dish soap",
+         "Category":"detergents",
+         "Unit Cost of Goods":2300.0
+      },
+      {
+         "Product":"all purpose",
+         "Category":"detergents",
+         "Unit Cost of Goods":2700.0
+      },
+      {
+         "Product":"toilet paper",
+         "Category":"toileteries",
+         "Unit Cost of Goods":1700.0
+      },
+      {
+         "Product":"paper towels",
+         "Category":"toileteries",
+         "Unit Cost of Goods":1500.0
+      },
+      {
+         "Product":"shampoo",
+         "Category":"personal care",
+         "Unit Cost of Goods":3000.0
+      },
+      {
+         "Product":"hand soap",
+         "Category":"personal care",
+         "Unit Cost of Goods":2300.0
+      },
+      {
+         "Product":"shaving cream",
+         "Category":"personal care",
+         "Unit Cost of Goods":2400.0
+      }
+   ]
+}
