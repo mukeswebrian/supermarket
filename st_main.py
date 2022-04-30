@@ -58,19 +58,23 @@ supermarket = pd.concat([supermarket, revenue, date], axis=1)
 st.markdown('# Daily Supermarket Summary Report')
 
 
-# specify date input
+# specify date input and corresponding previous day
 date = st.date_input('Report Date')
 prev = date - timedelta(days=1)
 
+# fromat date strings
 dateStr = date.__format__('%Y-%m-%d')
 prevStr = prev.__format__('%Y-%m-%d')
 
+# fiter for data on the specified daates
 dateData = supermarket.query(f'date=="{dateStr}"')
 prevData = supermarket.query(f'date=="{prevStr}"')
 
+# calculate revenue for each date
 today_revenue = dateData.revenue.sum()
 prev_revenue = prevData.revenue.sum()
 
+# display the revenue metric
 st.metric('Total Revenue', 
           '{:,.0f} Shs'.format(today_revenue), 
           '{:,.0f} Shs'.format(today_revenue-prev_revenue)
@@ -83,6 +87,8 @@ toDate = toDate.groupby(['date','location']).sum().revenue.unstack(level=1)
 
 # format table values
 table1 = toDate.style.format({i:"{:,.0f}" for i in toDate.columns})
+
+# display table in streamlit
 st.table(table1)
 
 
@@ -92,6 +98,8 @@ toDateCum = toDate.cumsum()
 
 # format table values
 table2 = toDateCum.style.format({i:"{:,.0f}" for i in toDateCum.columns})
+
+# display table in streamlit
 st.table(table2)
 
 fig0, ax = plt.subplots(1,1)
@@ -114,11 +122,12 @@ st.markdown(f'## 3. Products ({dateStr})')
 products = dateData.groupby(['product','location'])
 products = products.revenue.sum().unstack(level=1)
 
+# build a filter for the top 5 products
 top5 = dateData.groupby('product').revenue.sum().sort_values(ascending=True)[-5:]
 top = filter(lambda i: any([i==p for p in top5.index]), products.index)
 
+# plot
 fig1, ax = plt.subplots(1,1)
-
 products.loc[list(top)].sort_values(by='location_2').plot(kind='barh',
                   figsize=(6,3),
                   title='Top 5 Products by Revenue',
@@ -129,13 +138,13 @@ products.loc[list(top)].sort_values(by='location_2').plot(kind='barh',
 xtick_labels = ['{:,.0f}'.format(int(x)) for x in ax.get_xticks()]
 ax.set_xticklabels(xtick_labels, size=8)
 
+# display figure in streamlit
 st.pyplot(fig1)
 
 
 # lagging products
 fig2, ax = plt.subplots(1,1)
 products = dateData.groupby('product').revenue.sum().sort_values(ascending=True)
-
 products[:5].plot(kind='barh',
                   figsize=(6,3),
                   title='Bottom 5 Products by Revenue',
@@ -146,6 +155,7 @@ products[:5].plot(kind='barh',
 xtick_labels = ['{:,.0f}'.format(int(x)) for x in ax.get_xticks()]
 ax.set_xticklabels(xtick_labels, size=8)
 
+# display figure in streamlit
 st.pyplot(fig2)
 
 # Busiest hour
@@ -161,5 +171,6 @@ hours.plot(kind='bar',
 xtick_labels = [x.__format__('%H:00') for x in hours.index]
 ax.set_xticklabels(xtick_labels, size=8)
 
+# display figure in streamlit
 st.pyplot(fig3)
 
