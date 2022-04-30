@@ -13,7 +13,7 @@ def fetchData():
         'host': 'da-class-db.cxcjjheb3bem.us-east-1.rds.amazonaws.com',
         'port': '3306',
         'database': 'supermarket',
-        'username': 'brian_mukeswe',
+        'username': 'hibreed_student',
         'password': open('password.txt','r').read()
         }
 
