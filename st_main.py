@@ -1,3 +1,9 @@
+'''
+author: Brian Mukeswe
+date: April 30, 2022
+contact: mukeswebrian@yahoo.com
+'''
+
 # import libraries
 import streamlit as st
 import pandas as pd
