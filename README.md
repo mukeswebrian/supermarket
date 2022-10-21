@@ -6,7 +6,7 @@ This repository contains a synthetic dataset that can be used to teach and learn
 - open a new terminal in VS Code
 - run each of the commands below as described
 
-```
+```bash
 # check python version - mae sure it is at least python 3
 python --version
 
