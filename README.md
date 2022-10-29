@@ -7,7 +7,7 @@ This repository contains a synthetic dataset that can be used to teach and learn
 - run each of the commands below as described
 
 ```bash
-# check python version - mae sure it is at least python 3
+# check python version - make sure it is at least python 3
 python --version
 
 # create and activate the python environment where you will be working
