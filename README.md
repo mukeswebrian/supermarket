@@ -18,7 +18,7 @@ python -m venv hibreed_data_env
 python -m pip install -r requirements.txt
 
 # run the provided script to create a sqlite database on your local computer
-python load_all_database_tables
+python load_all_database_tables.py
 ```
 
 ## Step 2: Test SQL Lite database with example queries
