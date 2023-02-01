@@ -1,12 +1,13 @@
 # supermarket
 This repository contains a synthetic dataset that can be used to teach and learn different data analytics concepts using SQL Lite and Python.
 
-Note: if you are using a macbook, you may need to replace `python` with `python3` is the commands shown below
+
 
 
 ## Step 1: Load all the data files into a SQLite database
 - open a new terminal in VS Code
 - run each of the commands below as described
+- Note: if you are using a macbook, you may need to replace `python` with `python3` is the commands shown below
 
 ```bash
 # check python version - make sure it is at least python 3
