@@ -9,7 +9,8 @@ Windows
 - run each of the commands below as described
 - Note: if you are using a macbook, you may need to replace `python` with `python3` is the commands shown below
 
-```Windows
+```
+Windows
 python --version
 
 # create and activate the python environment where you will be working
@@ -23,7 +24,8 @@ python -m pip install -r requirements.txt
 python load_all_database_tables.py
 ```
 
-``Macbook bash - terminal
+```
+Macbook bash - terminal
 # check python version - make sure it is at least python 3
 python --version
 
