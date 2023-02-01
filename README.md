@@ -29,8 +29,10 @@ Macbook bash - terminal
 # check python version - make sure it is at least python 3
 python --version
 
-# create and activate the python environment where you will be working
+# create  python environment where you will be working
 python -m venv hibreed_data_env
+
+# and activate the environment where you will be working
 ./hibreed_data_env/Scripts/activate
 
 # install the required python dependancies
