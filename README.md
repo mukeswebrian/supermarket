@@ -23,13 +23,13 @@ python load_all_database_tables.py
 ```
 Macbook bash - terminal
 # check python version - make sure it is at least python 3
-python --version
+python3 --version
 
 # install the required python dependancies
-python -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 
 # run the provided script to create a sqlite database on your local computer
-python load_all_database_tables.py
+python3 load_all_database_tables.py
 ```
 
 ## Step 2: Test SQL Lite database with example queries
