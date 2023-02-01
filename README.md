@@ -35,7 +35,7 @@ python --version
 python -m venv hibreed_data_env
 
 # activate the environment where you will be working
-./hibreed_data_env/bin/activate
+sudo ./hibreed_data_env/bin/activate
 
 # install the required python dependancies
 python -m pip install -r requirements.txt
