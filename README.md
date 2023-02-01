@@ -13,7 +13,6 @@ Windows
 Windows
 python --version
 
-
 # install the required python dependancies
 python -m pip install -r requirements.txt
 
@@ -25,7 +24,6 @@ python load_all_database_tables.py
 Macbook bash - terminal
 # check python version - make sure it is at least python 3
 python --version
-
 
 # install the required python dependancies
 python -m pip install -r requirements.txt
